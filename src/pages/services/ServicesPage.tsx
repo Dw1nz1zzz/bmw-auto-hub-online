@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Layout from "../../components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -14,15 +13,15 @@ import {
   Battery,
   MousePointer,
   Clock,
-  Engine,
+  Car,  // Replaced Engine with Car
   Filter,
-  Oil,
+  Fuel, // Replaced Oil with Fuel
   Heater,
   Plug,
   Gauge,
-  Tire,
+  CircleDot, // Replaced Tire with CircleDot
   HardDrive,
-  Gear,
+  Cog, // Replaced Gear with Cog
   Key
 } from "lucide-react";
 
@@ -46,7 +45,7 @@ const services = [
     description: "Полное ТО двигателя по регламенту производителя",
     price: "1 000 ₽",
     duration: "1-2 часа",
-    icon: Engine,
+    icon: Car,  // Changed from Engine to Car
   },
   {
     id: 2,
@@ -64,7 +63,7 @@ const services = [
     description: "Замена масла в редукторах с промывкой",
     price: "от 500 ₽",
     duration: "1 час",
-    icon: Oil,
+    icon: Fuel,  // Changed from Oil to Fuel
   },
   {
     id: 4,
@@ -73,7 +72,7 @@ const services = [
     description: "Замена масла в раздаточной коробке с диагностикой",
     price: "1 000 ₽",
     duration: "1 час",
-    icon: Oil,
+    icon: Fuel,  // Changed from Oil to Fuel
   },
   {
     id: 5,
@@ -82,7 +81,7 @@ const services = [
     description: "Полная замена масла в автоматической коробке передач",
     price: "3 000 ₽",
     duration: "2-3 часа",
-    icon: Gear,
+    icon: Cog,  // Changed from Gear to Cog
   },
   {
     id: 6,
@@ -172,7 +171,7 @@ const services = [
     description: "Очистка двигателя от нагара и отложений",
     price: "2 500 ₽",
     duration: "2-3 часа",
-    icon: Engine,
+    icon: Car,
   },
   {
     id: 16,
@@ -181,7 +180,7 @@ const services = [
     description: "Профессиональная очистка впускного коллектора дизельных двигателей",
     price: "15 000 ₽",
     duration: "4-6 часов",
-    icon: Engine,
+    icon: Car,
   },
   {
     id: 17,
@@ -226,7 +225,7 @@ const services = [
     description: "Замена двигателя с последующей диагностикой",
     price: "от 35 000 ₽",
     duration: "1-2 дня",
-    icon: Engine,
+    icon: Car,
   },
   {
     id: 22,
@@ -235,7 +234,7 @@ const services = [
     description: "Замена автоматической коробки передач",
     price: "15 000 ₽",
     duration: "6-8 часов",
-    icon: Gear,
+    icon: Cog,  // Changed from Gear to Cog
   },
   {
     id: 23,
@@ -244,7 +243,7 @@ const services = [
     description: "Замена заднего дифференциала",
     price: "6 000 ₽",
     duration: "3-5 часов",
-    icon: Gear,
+    icon: Cog,  // Changed from Gear to Cog
   },
   {
     id: 24,
@@ -280,7 +279,7 @@ const services = [
     description: "Замена и балансировка колес",
     price: "от 500 ₽",
     duration: "30-60 мин",
-    icon: Tire,
+    icon: CircleDot,  // Changed from Tire to CircleDot
   },
   {
     id: 28,
@@ -325,7 +324,7 @@ const services = [
     description: "Замена опор двигателя",
     price: "от 2 000 ₽",
     duration: "2-4 часа",
-    icon: Engine,
+    icon: Car,
   },
   {
     id: 33,
@@ -532,4 +531,3 @@ const ServicesPage = () => {
 };
 
 export default ServicesPage;
-
