@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -19,6 +20,12 @@ export default {
 		},
 		extend: {
 			colors: {
+				bmw: {
+					blue: '#0066B1',
+					black: '#000000',
+					gray: '#8A8D8F',
+					lightgray: '#E6E6E6',
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -84,11 +91,25 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out'
+			},
+			fontFamily: {
+				bmw: ['Inter', 'sans-serif'] // использую Inter как аналог BMW Type Next Pro
 			}
 		}
 	},
