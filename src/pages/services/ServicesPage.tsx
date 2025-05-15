@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Layout from "../../components/layout/Layout";
 import { Button } from "@/components/ui/button";
@@ -7,7 +6,7 @@ import { Link } from "react-router-dom";
 import { 
   CarFront, 
   Settings, 
-  Tool, 
+  Wrench, 
   Cpu, 
   Droplet, 
   Search,
@@ -61,7 +60,7 @@ const services = [
     description: "Диагностика и устранение неисправностей двигателя",
     price: "от 20 000 ₽",
     duration: "от 5 часов",
-    icon: Tool,
+    icon: Wrench,
   },
   {
     id: 5,
