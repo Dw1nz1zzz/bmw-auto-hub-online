@@ -378,7 +378,7 @@ const services = [
     description: "Замена насоса системы смазки двигателя",
     price: "от 15 000 ₽",
     duration: "5-10 часов",
-    icon: Oil,
+    icon: Fuel,  // Changed from Oil to Fuel
   },
   {
     id: 39,
