@@ -3,11 +3,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
-
-interface ServiceCategory {
-  id: string;
-  name: string;
-}
+import { ServiceCategory } from "@/types/services";
 
 interface ServiceFiltersProps {
   categories: ServiceCategory[];
