@@ -2,7 +2,7 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
 import EmptyServicesList from "./EmptyServicesList";
-import { Service, ServiceWithIcon } from "@/types/services";
+import { Service } from "@/types/services";
 import { CarFront, Wrench, Cpu, ChevronRight, Filter, Fuel, Droplet, Cog } from "lucide-react";
 
 // Map string icon names from database to actual React components
